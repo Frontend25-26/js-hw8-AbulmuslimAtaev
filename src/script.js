@@ -275,4 +275,3 @@ board.addEventListener('click', (e) => {
 });
 
 createBoard();
-
