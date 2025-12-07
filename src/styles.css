@@ -54,6 +54,16 @@ body {
     position: absolute;
     margin-left: var(--ml, 0);
     margin-bottom: var(--mb, 0);
+    transition: margin-left 0.3s ease, margin-bottom 0.3s ease;
+}
+
+.piece.selected {
+    box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.8);
+}
+
+.cell.valid-move {
+    background: rgba(76, 175, 80, 0.6);
+    cursor: pointer;
 }
 
 .piece.white {
@@ -63,4 +73,44 @@ body {
     background: #272727;
 }
 
+.explosion {
+    width: 70px;
+    height: 70px;
+    pointer-events: none;
+    margin-top: -5px;
+    margin-left: -5px;
+}
 
+.victory-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.victory-message {
+    background: #fff;
+    padding: 40px 60px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.victory-message h1 {
+    margin: 0 0 15px 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.victory-message p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #666;
+}

@@ -1,1 +1,1 @@
-export const REPO_NAME = '/js-hw8-username'
+export const REPO_NAME = '/js-hw8-AbulmuslimAtaev'
