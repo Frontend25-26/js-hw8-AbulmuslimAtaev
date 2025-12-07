@@ -215,7 +215,7 @@ function movePiece(targetCell) {
 
 function capturePiece(piece) {
     const explosion = document.createElement('img');
-    explosion.src = 'media/explosion-gif.gif';
+    explosion.src = 'explosion-gif.gif';
     explosion.classList.add('explosion');
 
     piece.parentElement.appendChild(explosion);
